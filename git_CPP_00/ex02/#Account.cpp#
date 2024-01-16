@@ -1,0 +1,91 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Account.cpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcot <marvin@42.fr>                        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/17 15:22:34 by gcot              #+#    #+#             */
+/*   Updated: 2023/09/17 16:22:44 by gcot             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Account.hpp"
+#include <iostream>
+
+Account::~Account( void )
+{
+}
+
+void	Account::makeDeposit( int deposit )
+{
+
+}
+
+bool	Account::makeWithdrawal( int withdrawal )
+{
+	bool	res;
+
+	return (res);
+}
+
+int	Account::checkAmount( void ) const
+{
+	int	res;
+
+	return (res);
+}
+
+void	Account::displayStatus( void ) const
+{
+
+}
+
+static int	getNbAccounts( void )
+{
+	int	res;
+	//_nbAccounts++;
+	return (res);
+}
+
+static int      getTotalAmount( void )
+{
+        static int      res;
+
+        return (res);
+}
+
+static int	getNbDeposits( void )
+{
+        static int      res;
+
+        return (res);
+}
+
+static int	getNbWithdrawals( void )
+{
+        static int      res;
+
+        return (res);
+}
+
+static void	displayAccountsInfos( void )
+{
+
+}
+
+static void	_displayTimestamp( void )
+{
+
+}
+
+Account::Account( int initial_deposit )
+{
+        _nbDeposits = initial_deposit;
+        _accountIndex = getNbAccounts();
+        std::cout << "index:" << _accountIndex << ";amount:" << _nbDeposits << \
+";created\n";
+        //_totalAmount += _nbDeposits;                                          
+        //_totalNbDeposits++;                                                   
+	//_nbAccounts++;                                                        
+}
